@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionTitle from "../ui/SectionTitle";
+import { Link} from 'react-router-dom';
 
 const projects = [
   {
@@ -73,13 +74,13 @@ const FeaturedProjects = () => {
                 <p className="text-lg text-primary-600 mb-6">
                   {project.description}
                 </p>
-                <a
-                  href="/projects"
+                <Link
+                  to="/projects"
                   className="inline-flex items-center gap-2 text-primary-800 hover:underline transition-colors text-base font-medium"
                 >
                   View Projects
                   <span>→</span>
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}
