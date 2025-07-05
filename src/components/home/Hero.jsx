@@ -31,6 +31,18 @@ const processSteps = [
 
 const heroSlides = [
   {
+    id: 12,
+    image: "/homepage/hero12.jpeg",
+    title: "Your Vision, Our Expertise",
+    subtitle: "Partnering with you to build extraordinary spaces.",
+  },
+  {
+    id: 13,
+    image: "/homepage/hero13.jpeg",
+    title: "Building a Better Tomorrow",
+    subtitle: "Sustainable architecture for future generations.",
+  },
+  {
     id: 1,
     image: "/homepage/hero3.jpeg",
     title: "Designing Dreams, Building Realities",
@@ -53,18 +65,6 @@ const heroSlides = [
     image: '/homepage/hero5.jpeg',
     title: 'Spaces That Inspire and Endure',
     subtitle: 'Crafting architectural legacies for generations to come.'
-  },
-  {
-    id: 12,
-    image: "/homepage/hero12.jpeg",
-    title: "Your Vision, Our Expertise",
-    subtitle: "Partnering with you to build extraordinary spaces.",
-  },
-  {
-    id: 13,
-    image: "/homepage/hero13.jpeg",
-    title: "Building a Better Tomorrow",
-    subtitle: "Sustainable architecture for future generations.",
   },
   // {
   //   id: 5,
@@ -116,7 +116,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 6000);
+    }, 2000);
     return () => clearInterval(timer);
   }, []);
 
@@ -151,10 +151,10 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="max-w-4xl"
             >
-              <h1 className="text-5xl md:text-7xl font-heading font-bold text-white mb-6 leading-tight text-center sm:text-left">
+              <h1 className="text-4xl md:text-7xl font-heading font-bold text-white mb-6 leading-tight text-center sm:text-left">
                 {heroSlides[currentSlide].title}
               </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl text-center sm:text-left">
+              <p className="text-base md:text-2xl text-white/90 mb-8 max-w-2xl text-center sm:text-left">
                 {heroSlides[currentSlide].subtitle}
               </p>
 
