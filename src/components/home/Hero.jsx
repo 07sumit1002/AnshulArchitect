@@ -34,82 +34,82 @@ const processSteps = [
 
 const heroSlides = [
   {
-    id: 9,
-    image: m6,
+    id: 1,
+    image: "/homepage/hero3.jpeg",
     title: "Designing Dreams, Building Realities",
     subtitle: "Turning your vision into living form.",
   },
   {
-    id: 1,
-    image: "/homepage/project3.jpeg",
+    id: 2,
+    image: "/homepage/hero2.jpeg",
     title: "Where Vision Meets Structure",
     subtitle: "From concept to creation — reimagining every detail.",
   },
   {
-    id: 10,
-    image: m7,
+    id: 3,
+    image: "/homepage/hero4.jpeg",
     title: "Timeless Designs, Modern Institutions",
     subtitle: "Elevating institutional designs with iconic spaces.",
   },
-  // {
-  //   id: 4,
-  //   image: '/homepage/hero5.jpeg',
-  //   title: 'Spaces That Inspire and Endure',
-  //   subtitle: 'Crafting architectural legacies for generations to come.'
-  // },
-  // {
-  //   id: 5,
-  //   image: '/homepage/hero12.jpeg',
-  //   title: 'Innovative Concepts, Lasting Impact',
-  //   subtitle: 'Redefining spaces with creativity and purpose.'
-  // },
-  // {
-  //   id: 6,
-  //   image: '/homepage/hero13.jpeg',
-  //   title: 'Architecture for Modern Life',
-  //   subtitle: 'Designing functional spaces for evolving needs.'
-  // },
-  {
-    id: 2,
-    image: "/homepage/hero1.jpeg",
-    title: "Where Ideas Take Shape",
-    subtitle: "Transforming concepts into stunning realities.",
-  },
-  {
-    id: 3,
-    image: "/homepage/hero6.jpeg",
-    title: "Crafting Iconic Landmarks",
-    subtitle: "Building spaces that stand the test of time.",
-  },
   {
     id: 4,
-    image: m8,
-    title: "Design with Purpose and Passion",
-    subtitle: "Merging creativity with practical solutions.",
+    image: '/homepage/hero5.jpeg',
+    title: 'Spaces That Inspire and Endure',
+    subtitle: 'Crafting architectural legacies for generations to come.'
   },
   {
-    id: 5,
-    image: "/homepage/hero8.jpeg",
-    title: "Elevating Everyday Spaces",
-    subtitle: "Making ordinary places truly remarkable.",
-  },
-  {
-    id: 6,
-    image: "/homepage/hero9.jpeg",
-    title: "Inspired by Innovation",
-    subtitle: "Leading design trends with visionary thinking.",
-  },
-  {
-    id: 7,
-    image: "/homepage/hero10.jpeg",
+    id: 12,
+    image: "/homepage/hero12.jpeg",
     title: "Your Vision, Our Expertise",
     subtitle: "Partnering with you to build extraordinary spaces.",
   },
   {
-    id: 8,
-    image: "/homepage/hero11.jpeg",
+    id: 13,
+    image: "/homepage/hero13.jpeg",
     title: "Building a Better Tomorrow",
     subtitle: "Sustainable architecture for future generations.",
+  },
+  // {
+  //   id: 5,
+  //   image: '/homepage/hero1.jpeg',
+  //   title: 'Innovative Concepts, Lasting Impact',
+  //   subtitle: 'Redefining spaces with creativity and purpose.'
+  // },
+  {
+    id: 6,
+    image: '/homepage/hero6.jpeg',
+    title: 'Architecture for Modern Life',
+    subtitle: 'Designing functional spaces for evolving needs.'
+  },
+  {
+    id: 7,
+    image: "/homepage/hero7.jpeg",
+    title: "Where Ideas Take Shape",
+    subtitle: "Transforming concepts into stunning realities.",
+  },
+  {
+    id: 8,
+    image: "/homepage/hero8.jpeg",
+    title: "Crafting Iconic Landmarks",
+    subtitle: "Building spaces that stand the test of time.",
+  },
+  {
+    id: 9,
+    image: "/homepage/hero9.jpeg",
+    title: "Design with Purpose and Passion",
+    subtitle: "Merging creativity with practical solutions.",
+  },
+  {
+    id: 10,
+    image: "/homepage/hero10.jpeg",
+    title: "Elevating Everyday Spaces",
+    subtitle: "Making ordinary places truly remarkable.",
+  },
+  {
+    id:11,
+    image: "/homepage/hero11.jpeg",
+    title: "Inspired by Innovation",
+    subtitle: "Leading design trends with visionary thinking.",
   },
 ];
 
