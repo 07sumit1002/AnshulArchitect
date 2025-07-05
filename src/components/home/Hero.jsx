@@ -137,7 +137,7 @@ const Hero = () => {
             <img
               src={heroSlides[currentSlide].image}
               alt={heroSlides[currentSlide].title}
-              className="w-full h-full sm:object-fill object-cover brightness-60"
+              className="w-full h-full sm:object-fill object-fill brightness-60"
             />
           </motion.div>
         </AnimatePresence>
