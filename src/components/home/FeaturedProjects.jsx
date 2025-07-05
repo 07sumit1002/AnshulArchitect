@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionTitle from "../ui/SectionTitle";
+import { Link} from 'react-router-dom';
 
 const projects = [
   {
@@ -60,7 +61,7 @@ const FeaturedProjects = () => {
                   transition={{ duration: 0.8 }}
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-[600px] object-cover"
+                  className="w-full h-[600px] object-fill"
                 />
               </div>
               <div className="w-full lg:w-1/3">
