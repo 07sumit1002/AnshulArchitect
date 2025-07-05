@@ -39,7 +39,7 @@ const ServiceDetail = () => {
       <motion.img
         src={service.image}
         alt={service.title}
-        className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-xl border-2 border-indigo-100 transform hover:scale-[1.02] transition-transform duration-300 mb-8"
+        className="w-full h-64 sm:h-80 lg:h-96 object-fill rounded-2xl shadow-xl border-2 border-indigo-100 transform hover:scale-[1.02] transition-transform duration-300 mb-8"
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}

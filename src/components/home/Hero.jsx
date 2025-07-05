@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import m6 from "../../assets/project1/m6.jpeg";
-import m7 from "../../assets/project4/m5.png";
-import m8 from "../../assets/project1/m3.jpeg";
 
 const processSteps = [
   {
@@ -140,7 +137,7 @@ const Hero = () => {
             <img
               src={heroSlides[currentSlide].image}
               alt={heroSlides[currentSlide].title}
-              className="w-full h-full object-cover brightness-60"
+              className="w-full h-full object-fill brightness-60"
             />
           </motion.div>
         </AnimatePresence>

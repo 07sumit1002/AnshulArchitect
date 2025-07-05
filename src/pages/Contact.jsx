@@ -126,7 +126,7 @@ const Contact = () => {
     <h3 className="font-medium text-lg">Email Us</h3>
   </div>
   <p className="text-primary-600 break-words ml-14 mt-2">
-    <a href="mailto:projects@anshularchitects.com" className="hover:text-primary-800 transition-colors break-words">
+    <a href="mailto:anshulsharma.upadhyay@gmail.com" className="hover:text-primary-800 transition-colors break-words">
       anshulsharma.upadhyay@gmail.com
     </a>
   </p>
@@ -139,8 +139,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium text-lg mb-1">Call Us</h3>
                       <p className="text-primary-600">
-                        <a href="tel:+911234567890" className="hover:text-primary-800 transition-colors">
-                          89300 00984
+                        <a href="tel:+9189300 00984" className="hover:text-primary-800 transition-colors">
+                          +91 89300 00984
                         </a>
                       </p>
                     </div>
