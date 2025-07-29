@@ -144,18 +144,12 @@ useEffect(() => {
 
   return (
      <>
-    {/* {isPortrait && window.innerWidth < 768 && (
-  <div className="w-full bg-yellow-200 text-yellow-900 text-center py-2 text-sm sm:hidden z-10 relative">
-    📱 Please rotate your phone for a better viewing experience.
-  </div>
-)} */}
-    <section className="relative min-h-screen bg-white">
-      {isPortrait && window.innerWidth < 768 && (
-  <div className="w-full bg-yellow-200 text-yellow-900 text-center py-2 text-sm sm:hidden z-10">
+    {location.pathname === '/' && isPortrait && window.innerWidth < 768 && (
+  <div className="w-full bg-yellow-200 text-yellow-900 text-center py-2 text-sm sm:hidden z-10 mt-[64px]">
     📱 Please rotate your phone for a better viewing experience.
   </div>
 )}
-
+    <section className="relative min-h-screen bg-white">
       {/* Hero Slider */}
       <div className="relative h-[80vh] sm:h-screen overflow-hidden">
         <AnimatePresence initial={false}>
