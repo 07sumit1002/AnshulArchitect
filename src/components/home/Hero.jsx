@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import m6 from "../../assets/project1/m6.jpeg";
+import m7 from "../../assets/project4/m6.png";
+import m8 from "../../assets/project4/m7.png";
+import m9 from "../../assets/project4/m9.jpeg";
+import m5 from "../../assets/project4/m5.png";
+import m4 from "../../assets/project4/m3.png";
 
 const processSteps = [
   {
@@ -31,38 +37,38 @@ const processSteps = [
 
 const heroSlides = [
   {
-    id: 12,
-    image: "/homepage/hero12.jpeg",
+    id: 1,
+    image: m7,
     title: "Your Vision, Our Expertise",
     subtitle: "Partnering with you to build extraordinary spaces.",
   },
   {
-    id: 13,
-    image: "/homepage/hero13.jpeg",
+    id: 2,
+    image: m6,
     title: "Building a Better Tomorrow",
     subtitle: "Sustainable architecture for future generations.",
   },
   {
-    id: 1,
-    image: "/homepage/hero3.jpeg",
+    id: 3,
+    image: m8,
     title: "Designing Dreams, Building Realities",
     subtitle: "Turning your vision into living form.",
   },
   {
-    id: 2,
-    image: "/homepage/hero2.jpeg",
+    id: 4,
+    image: m9,
     title: "Where Vision Meets Structure",
     subtitle: "From concept to creation — reimagining every detail.",
   },
   {
-    id: 3,
-    image: "/homepage/hero4.jpeg",
+    id: 5,
+    image: m5,
     title: "Timeless Designs, Modern Institutions",
     subtitle: "Elevating institutional designs with iconic spaces.",
   },
   {
-    id: 4,
-    image: '/homepage/hero5.jpeg',
+    id: 6,
+    image: m4,
     title: 'Spaces That Inspire and Endure',
     subtitle: 'Crafting architectural legacies for generations to come.'
   },
@@ -73,37 +79,37 @@ const heroSlides = [
   //   subtitle: 'Redefining spaces with creativity and purpose.'
   // },
   {
-    id: 6,
+    id: 7,
     image: '/homepage/hero6.jpeg',
     title: 'Architecture for Modern Life',
     subtitle: 'Designing functional spaces for evolving needs.'
   },
   {
-    id: 7,
+    id: 8,
     image: "/homepage/hero7.jpeg",
     title: "Where Ideas Take Shape",
     subtitle: "Transforming concepts into stunning realities.",
   },
   {
-    id: 8,
+    id: 9,
     image: "/homepage/hero8.jpeg",
     title: "Crafting Iconic Landmarks",
     subtitle: "Building spaces that stand the test of time.",
   },
   {
-    id: 9,
+    id: 10,
     image: "/homepage/hero9.jpeg",
     title: "Design with Purpose and Passion",
     subtitle: "Merging creativity with practical solutions.",
   },
   {
-    id: 10,
+    id: 11,
     image: "/homepage/hero10.jpeg",
     title: "Elevating Everyday Spaces",
     subtitle: "Making ordinary places truly remarkable.",
   },
   {
-    id:11,
+    id: 12,
     image: "/homepage/hero11.jpeg",
     title: "Inspired by Innovation",
     subtitle: "Leading design trends with visionary thinking.",
@@ -137,7 +143,7 @@ const Hero = () => {
             <img
               src={heroSlides[currentSlide].image}
               alt={heroSlides[currentSlide].title}
-              className="w-full h-full sm:object-fill object-fill brightness-60"
+              className="w-full h-full sm:object-cover object-cover brightness-60"
             />
           </motion.div>
         </AnimatePresence>
