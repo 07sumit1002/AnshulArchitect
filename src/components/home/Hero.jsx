@@ -129,7 +129,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen bg-white">
       {/* Hero Slider */}
-      <div className="relative h-[85vh] sm:h-screen overflow-hidden">
+      <div className="relative h-[80vh] sm:h-screen overflow-hidden">
         <AnimatePresence initial={false}>
           <motion.div
             key={currentSlide}
@@ -143,7 +143,7 @@ const Hero = () => {
             <img
               src={heroSlides[currentSlide].image}
               alt={heroSlides[currentSlide].title}
-              className="w-full h-full sm:object-cover object-cover brightness-60"
+              className="w-full h-full sm:object-cover object-fill brightness-60"
             />
           </motion.div>
         </AnimatePresence>
