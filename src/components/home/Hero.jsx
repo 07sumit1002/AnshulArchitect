@@ -122,12 +122,40 @@ const Hero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 2000);
+    }, 4000);
     return () => clearInterval(timer);
   }, []);
 
+  const [isPortrait, setIsPortrait] = useState(true);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsPortrait(window.innerHeight > window.innerWidth);
+  };
+
+  handleResize(); // Check on load
+  window.addEventListener("resize", handleResize);
+
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);
+
+
   return (
+     <>
+    {/* {isPortrait && window.innerWidth < 768 && (
+  <div className="w-full bg-yellow-200 text-yellow-900 text-center py-2 text-sm sm:hidden z-10 relative">
+    📱 Please rotate your phone for a better viewing experience.
+  </div>
+)} */}
     <section className="relative min-h-screen bg-white">
+      {isPortrait && window.innerWidth < 768 && (
+  <div className="w-full bg-yellow-200 text-yellow-900 text-center py-2 text-sm sm:hidden z-10">
+    📱 Please rotate your phone for a better viewing experience.
+  </div>
+)}
+
       {/* Hero Slider */}
       <div className="relative h-[80vh] sm:h-screen overflow-hidden">
         <AnimatePresence initial={false}>
@@ -289,6 +317,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
