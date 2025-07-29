@@ -145,7 +145,7 @@ useEffect(() => {
   return (
      <>
     {location.pathname === '/' && isPortrait && window.innerWidth < 768 && (
-  <div className="w-full bg-yellow-200 text-yellow-900 text-center py-2 text-sm sm:hidden z-10 mt-[64px]">
+  <div className="w-full bg-yellow-200 text-yellow-900 text-center py-2 text-xs sm:hidden z-10 mt-[64px]">
     📱 Please rotate your phone for a better viewing experience.
   </div>
 )}
